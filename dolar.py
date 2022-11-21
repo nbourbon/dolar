@@ -19,8 +19,12 @@ def carga():
     database.columns =[datetime.now()]
     return(database)
 
+#initial run to set up the pandas dataframe
 data=carga()
-for i in range(4):
+
+#now, runing for multiple days
+for i in range(50):
+    #this is the number of seconds x day
+    time.sleep(86400)
     data[datetime.now()] = carga()
-    time.sleep(1)
     data.to_csv('data_test.csv')
