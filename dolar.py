@@ -4,7 +4,7 @@ import pandas as pd
 import time
 from datetime import datetime
 
-
+## probando
 def carga():
     urlpage = "https://dolarhoy.com/"
     page = requests.get(urlpage)
