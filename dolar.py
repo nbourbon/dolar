@@ -4,7 +4,7 @@ import pandas as pd
 import time
 from datetime import datetime
 
-## probando
+## probando crear un branch
 def carga():
     urlpage = "https://dolarhoy.com/"
     page = requests.get(urlpage)
@@ -19,7 +19,7 @@ def carga():
 
 #initial run to set up the pandas dataframe
 data=carga()
-
+# Testing Git
 #now, runing for multiple days
 for i in range(50):
     #this is the number of seconds x day
