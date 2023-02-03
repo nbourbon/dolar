@@ -1,9 +1,11 @@
+#%%
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
 from datetime import datetime
 
+#%%
 def carga():
     urlpage = "https://dolarhoy.com/"
     page = requests.get(urlpage)
@@ -19,6 +21,7 @@ def carga():
 #initial run to set up the pandas dataframe
 data=carga()
 
+#%%
 #now, runing for multiple days
 for i in range(50):
     #this is the number of seconds x day
